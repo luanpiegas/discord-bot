@@ -1,10 +1,7 @@
 require('dotenv').config();
-const express = require('express');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = process.env.BOT_PREFIX;
-
-const app = express()
 
 client.on('ready', () => {
     console.log(`Logado como: ${client.user.tag}`)
@@ -31,5 +28,3 @@ client.on("message", function (msg) {
 });
 
 client.login(process.env.DISCORD_TOKEN);
-
-app.listen(process.env.PORT);
