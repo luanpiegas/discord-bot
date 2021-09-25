@@ -8,6 +8,7 @@
 # azure
 .deployment
 .vscode/
+.github/
 
 # misc
 .DS_Store
