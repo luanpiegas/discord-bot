@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'dravo-bot'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f71a9068c9224874a5e20eeef6c5b45c }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_125eff0a693c4104b0cce5ce333e2420 }}
         package: .
