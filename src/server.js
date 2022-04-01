@@ -15,11 +15,13 @@ client.on("message", function (msg) {
     const args = commandBody.split(' ');
     const command = args.shift().toLowerCase();
 
+    // Ping
     if (command === "ping") {
         const timeTaken = Date.now() - msg.createdTimestamp;
-        msg.reply(`Pong! Latência: ${timeTaken}ms.`);
+        msg.reply(`Pong! Latency: ${timeTaken}ms.`);
     }
 
+    // Sum of two values
     else if (command === "sum") {
         const numArgs = args.map(x => parseFloat(x));
         const sum = numArgs.reduce((counter, x) => counter += x);
