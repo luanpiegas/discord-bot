@@ -23,12 +23,12 @@ client.on("message", function (msg) {
             const timeTaken = Date.now() - msg.createdTimestamp;
             msg.reply(`Pong! Latency: ${timeTaken}ms.`);
         break;
-      case 'sum':
+        case 'sum':
             const numArgs = args.map(x => parseFloat(x));
             const sum = numArgs.reduce((counter, x) => counter += x);
             msg.reply(`A soma é: ${sum}!`);
-      default:
-        return;
+        default:
+            return;
     }
 });
 
